@@ -23,3 +23,7 @@ button:hover {
 button:focus {
   outline: 0;
 }
+
+.inc {
+  margin-bottom: 20px;
+}

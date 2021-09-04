@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import randomcolor from 'randomcolor';
 
 const App = () => {
@@ -20,8 +20,12 @@ const App = () => {
   return (
     <div>
       <h1 style={{ color: color }}>{count}</h1>
-      <button onClick={increment}>Increment</button>
-      <button onClick={decrement}>Decrement</button>
+      <button className="inc" onClick={increment}>
+        Increment
+      </button>
+      <button className="dec" onClick={decrement}>
+        Decrement
+      </button>
     </div>
   );
 };
