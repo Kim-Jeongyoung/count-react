@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import randomcolor from 'randomcolor';
+import { useInterval } from 'rooks';
 
 const App = () => {
   const [count, setCount] = useState(0);
@@ -12,6 +13,12 @@ const App = () => {
   function decrement() {
     setCount((prevCount) => prevCount - 1);
   }
+
+  // useEffect(() => {
+  //   const intervalId = setInterval(() => {
+  //     setCount((prevCount) => prevCount + 1);
+  //   }, 1000);
+  // });
 
   useEffect(() => {
     setColor(randomcolor());
